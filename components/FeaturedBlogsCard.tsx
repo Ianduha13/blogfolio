@@ -1,4 +1,3 @@
-import { Post } from '@/types/Blogs'
 import React from 'react'
 import { Card, CardContent } from './ui/card'
 import Link from 'next/link'
@@ -9,8 +8,9 @@ export default function FeaturedBlogsCard({ blog }: { blog: PostOrPage }) {
 
   return (
     <Link href={`/blog/${blog.slug}`}>
-      <Card>
-        <CardContent className="relative flex aspect-square flex-col items-center p-0">
+      <Card className='dark:border-none dark:bg-[#242626]'>
+        <CardContent className="relative flex aspect-square flex-col items-center  p-0">
+          <span className='absolute left-0 top-0 z-10 rounded-tl-lg bg-background px-2 py-[2px] text-sm text-primary dark:bg-[#242626]'> {blog?.reading_time}  Min Read</span>
           {blog.feature_image && (
             <Image
               src={blog.feature_image}

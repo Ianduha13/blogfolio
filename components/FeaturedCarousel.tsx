@@ -1,6 +1,7 @@
 "use client"
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
+
 import {
   Carousel,
   CarouselContent,
@@ -18,7 +19,7 @@ export function FeaturedCarousel({ blogs }: { blogs: PostsOrPages }) {
 
   return (
     <section className="relative mx-auto w-full max-w-[1100px]">
-      <h3 className="text-4xl font-semibold text-primary">Featured Blogs</h3>
+      <h3 className="mb-6 border-b border-foreground pb-4 text-4xl font-semibold text-primary">Featured Blogs</h3>
       <Carousel
         plugins={[plugin.current]}
         className="relative mt-2"
