@@ -10,8 +10,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import { Post } from "@/types/Blogs"
+import FeaturedBlogsCard from "./FeaturedBlogsCard"
 
-export function FeaturedCarousel() {
+export function FeaturedCarousel({ blogs }: { blogs: Post[] }) {
   const plugin = React.useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
   )
@@ -21,25 +23,23 @@ export function FeaturedCarousel() {
       <h3 className="text-4xl font-semibold text-primary">Featured Blogs</h3>
       <Carousel
         plugins={[plugin.current]}
-        className=" overflow-hidden"
+        className="relative mt-2"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
+        opts={{
+          align: "start",
+          loop: true,
+        }}
       >
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index} className="basis-1/3">
-              <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-4xl font-semibold">{index + 1}</span>
-                  </CardContent>
-                </Card>
-              </div>
+          {blogs.map((blog, index) => (
+            <CarouselItem key={blog.id} className="md:basis-1/2 lg:basis-1/3">
+              <FeaturedBlogsCard blog={blog} />
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="absolute bottom-[-24] right-0 z-50" />
-        <CarouselNext />
+        <CarouselPrevious className="bottom-[-64px] left-[unset] right-[48px] top-[unset] z-50" />
+        <CarouselNext className="absolute bottom-[-64px] right-0 top-[unset]" />
       </Carousel>
     </section>
   )

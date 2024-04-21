@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/providers/theme-provider";
+import Footer from "@/components/Footer";
 
 const titillium = Titillium_Web({ weight: ['200', '300', '400', '600', '700'], subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
