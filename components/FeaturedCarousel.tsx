@@ -1,8 +1,6 @@
 "use client"
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
-
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -10,10 +8,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import { Post } from "@/types/Blogs"
 import FeaturedBlogsCard from "./FeaturedBlogsCard"
+import { PostsOrPages } from "@tryghost/content-api"
 
-export function FeaturedCarousel({ blogs }: { blogs: Post[] }) {
+export function FeaturedCarousel({ blogs }: { blogs: PostsOrPages }) {
   const plugin = React.useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
   )

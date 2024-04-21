@@ -7,7 +7,9 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-2 pt-24">
       <Hero />
-      <FeaturedCarousel blogs={blogs} />
+      {blogs?.length !== undefined &&
+        <FeaturedCarousel blogs={blogs} />
+      }
     </main>
   );
 }
