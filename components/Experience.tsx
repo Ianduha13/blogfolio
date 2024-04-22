@@ -38,7 +38,7 @@ export default function Experience() {
   return (
     <section className='w-full'>
       <h3 className='mb-4 text-3xl text-primary'>Experience</h3>
-      <div className='flex'>
+      <div className='flex items-center'>
         <ul className=''>
           <li className={`border-l-4 ${selectedExperience === 'hashi' ? "border-primary" : "border-primary/20"} w-[120px] py-3 pl-4 text-xl`}>
             <button onClick={() => setSelectedExperience('hashi')}>

@@ -3,6 +3,7 @@ import { Card, CardContent } from './ui/card'
 import Link from 'next/link'
 import Image from 'next/image'
 import { PostOrPage } from '@tryghost/content-api'
+import { format } from 'date-fns'
 
 export default function FeaturedBlogsCard({ blog }: { blog: PostOrPage }) {
 
@@ -19,12 +20,22 @@ export default function FeaturedBlogsCard({ blog }: { blog: PostOrPage }) {
               height={1080}
               className='top-0 h-1/3 w-full rounded-t-lg object-cover'
             />)}
-          <div className='flex flex-col gap-4 px-2 pt-4'>
-            <h4 className="text-xl font-medium text-primary">{blog.title}</h4>
-            <p className='line-clamp-2 text-sm'>{blog.excerpt}</p>
+          <div className='flex flex-col gap-2 px-2 pt-2'>
+            <div className='flex items-center justify-between'>
+              {blog.tags !== undefined &&
+                < span className='text-sm'>{blog.tags[0].name}</span>
+              }
+              {
+                blog?.published_at ? <time className="mx-1 text-sm font-light text-gray-800 dark:text-white" dateTime={blog?.published_at} title={format(new Date(blog?.published_at), 'yyyy-MM-dd')}>
+                  {format(new Date(blog?.published_at), 'dd MMMM, yyyy')}
+                </time> : ""
+              }
+            </div>
+            <h4 className="mb-2 text-xl font-medium text-primary">{blog.title}</h4>
+            <p className='line-clamp-3 text-sm'>{blog.excerpt}</p>
           </div>
         </CardContent>
       </Card>
-    </Link>
+    </Link >
   )
 }

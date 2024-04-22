@@ -5,7 +5,7 @@ import NavigationMenu from './NavigationMenu'
 
 export default function Navbar() {
   return (
-    <div className='fixed top-0 w-full bg-background shadow-md shadow-foreground/20 dark:shadow-black/30'>
+    <div className='fixed top-0 z-10 w-full bg-background shadow-md shadow-foreground/20 dark:shadow-black/30'>
       <nav className='mx-auto flex max-w-[1100px] items-center justify-between py-6'>
         <Link href='/'>
           <h4 className='text-2xl font-semibold text-primary'>IanDuhamel.tech</h4>
