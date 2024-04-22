@@ -11,7 +11,7 @@ export default function NavigationMenu() {
         <Link href='/' className={`${pathname === '/' && "text-primary"} text-lg font-medium`}>Home </Link>
       </li>
       <li>
-        <Link href='/' className={`${pathname.indexOf("/blog") > -1 && "text-primary"} text-lg font-medium`}>Blog </Link>
+        <Link href='/blogs' className={`${pathname.indexOf("/blog") > -1 && "text-primary"} text-lg font-medium`}>Blog </Link>
       </li>
       <li>
         <Link href='/portfolio' className={`${pathname === '/portfolio' && "text-primary"} text-lg font-medium`}>Portfolio </Link>
