@@ -2,6 +2,7 @@ import { ArrowRightIcon } from '@radix-ui/react-icons'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import SplineScene from './SplineScene'
 
 export default function Hero() {
   return (
@@ -14,13 +15,7 @@ export default function Hero() {
           <ArrowRightIcon className='h-6 w-6' />Learn More
         </Link>
       </section>
-      <Image
-        src={'/heroImg.png'}
-        alt='Hero Image'
-        width={684}
-        height={684}
-        className='h-full w-[45%] object-contain'
-      />
+      <SplineScene url='https://prod.spline.design/HNRZ5UAsIkF0R4e1/scene.splinecode' />
     </main>
   )
 }
