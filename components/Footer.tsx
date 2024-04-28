@@ -8,16 +8,16 @@ export default function Footer() {
       <h3 className='text-xl font-semibold '>IanDuhamel.tech</h3>
       <div className='flex flex-col items-center '>
         <h4 className=' text-lg font-medium'>
-          Follow me:
+          Social media:
         </h4>
         <ul className='flex gap-2'>
           <li>
-            <Link href="">
+            <Link href="https://www.linkedin.com/in/ian-duhamel/" target='_blank'>
               <LinkedInLogoIcon className='size-6' />
             </Link>
           </li>
           <li>
-            <Link href="">
+            <Link href='https://github.com/Ianduha13' target='_blank'>
               <GitHubLogoIcon className='size-6' />
             </Link>
           </li>

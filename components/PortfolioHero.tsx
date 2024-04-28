@@ -8,8 +8,8 @@ export default function PortfolioHero() {
         <Image
           src='/ianFace.png'
           alt='hero portfolio image'
-          width={1100}
-          height={1580}
+          width={275}
+          height={395}
           className='h-full w-full object-contain'
         />
       </figure>

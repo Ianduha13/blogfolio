@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 const titillium = Titillium_Web({ weight: ['200', '300', '400', '600', '700'], subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ianduhamel.tech",
+  title: "IanDuhamel.tech",
   description: "Code enthusiast with a knack for explaining complex ideas in simple ways. I love sharing my tech journey and learning from others.",
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(
-        "min-h-screen bg-background font-sans antialiased",
+        "min-h-screen font-sans antialiased px-4 bg-[#121212]",
         titillium.className
       )}>
         <ThemeProvider

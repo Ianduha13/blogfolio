@@ -36,7 +36,7 @@ export default function Experience() {
   const [selectedExperience, setSelectedExperience] = useState('hashi')
   const activeExperience = experience.find(exp => exp.id === selectedExperience)
   return (
-    <section className='w-full'>
+    <section className='w-full max-w-[900px]'>
       <h3 className='mb-4 text-3xl text-primary'>Experience</h3>
       <div className='flex items-center'>
         <ul className=''>
