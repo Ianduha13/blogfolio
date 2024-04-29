@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/providers/theme-provider";
 import Footer from "@/components/Footer";
 import { PHProvider } from "@/components/providers/posthog-provider";
 import PostHogPageView from "@/components/PHPageView";
+import { Suspense } from "react";
 
 const titillium = Titillium_Web({ weight: ['200', '300', '400', '600', '700'], subsets: ["latin"] });
 
@@ -37,7 +38,9 @@ export default function RootLayout({
             {children}
             <Footer />
           </ThemeProvider>
-          <PostHogPageView />
+          <Suspense fallback={null} >
+            <PostHogPageView />
+          </Suspense>
         </body>
       </PHProvider>
     </html>
