@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import Footer from "@/components/Footer";
+import { PHProvider } from "@/components/providers/posthog-provider";
+import PostHogPageView from "@/components/PHPageView";
 
 const titillium = Titillium_Web({ weight: ['200', '300', '400', '600', '700'], subsets: ["latin"] });
 
@@ -20,21 +22,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(
-        "min-h-screen font-sans antialiased px-4 bg-[#121212]",
-        titillium.className
-      )}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
+      <PHProvider>
+        <body className={cn(
+          "min-h-screen font-sans antialiased px-4 bg-[#121212]",
+          titillium.className
+        )}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+            {children}
+            <Footer />
+          </ThemeProvider>
+          <PostHogPageView />
+        </body>
+      </PHProvider>
     </html>
   );
 }
