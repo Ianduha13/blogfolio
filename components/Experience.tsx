@@ -4,31 +4,31 @@ import React, { useState } from 'react'
 const experience = [
   {
     id: 'hashi',
-    title: 'Software Engineer',
+    title: 'Full Stack Javascript Developer',
     company: 'Hashi',
-    date: '2021 - Present',
-    description: 'I am currently working as a software engineer at Hashi. I am responsible for building and maintaining the front-end of the company\'s web applications. I am also responsible for working with the back-end team to ensure that the front-end and back-end are in sync. I am also responsible for working with the design team to ensure that the front-end is visually appealing and user-friendly. I am also responsible for working with the QA team to ensure that the front-end is bug-free and performs well.'
+    date: 'Mar 2023 - Currently',
+    description: 'At Hashi, a startup specializing in B2B online education, I lead key project streamlining efforts. Major achievements include leading the development of a React Native npm library compatible with both Expo and RN bundlers, and working across all company projects as a Full Stack Javascript Developer.'
   },
   {
     id: 'devink',
-    title: 'Software Engineer',
+    title: 'CTO',
     company: 'Devink',
-    date: '2019 - 2021',
-    description: 'I worked as a software engineer at Devink. I was responsible for building and maintaining the front-end of the company\'s web applications. I was also responsible for working with the back-end team to ensure that the front-end and back-end were in sync. I was also responsible for working with the design team to ensure that the front-end was visually appealing and user-friendly. I was also responsible for working with the QA team to ensure that the front-end was bug-free and performed well.'
+    date: 'Aug 2023 - Currently',
+    description: 'As the CTO of Devink, a developer-centric startup, I guide our technological vision, managing diverse client-driven solutions and our own SaaS products. My role includes overseeing project management, tech strategy, and mentoring our team.'
   },
   {
     id: 'bookster',
-    title: 'Software Engineer',
+    title: 'Freelancer',
     company: 'Bookster',
-    date: '2017 - 2019',
-    description: 'I worked as a software engineer at Bookster. I was responsible for building and maintaining the front-end of the company\'s web applications. I was also responsible for working with the back-end team to ensure that the front-end and back-end were in sync. I was also responsible for working with the design team to ensure that the front-end was visually appealing and user-friendly. I was also responsible for working with the QA team to ensure that the front-end was bug-free and performed well.'
+    date: 'Sept 2023 - Nov 2023',
+    description: 'Working as a freelancer at Bookster, I led the integration of Amplitude in React Native for an app targeting book enthusiasts on both Play Store and App Store. This role involved enhancing user engagement through technical skills and behavioral insights.'
   },
   {
     id: 'jethi',
-    title: 'Software Engineer',
-    company: 'Jethi Tech',
-    date: '2015 - 2017',
-    description: 'I worked as a software engineer at Jethi Tech. I was responsible for building and maintaining the front-end of the company\'s web applications. I was also responsible for working with the back-end team to ensure that the front-end and back-end were in sync. I was also responsible for working with the design team to ensure that the front-end was visually appealing and user-friendly. I was also responsible for working with the QA team to ensure that the front-end was bug-free and performed well.'
+    title: 'Frontend React Developer',
+    company: 'Jethi Tech Software',
+    date: 'Oct 2022 - Mar 2023',
+    description: 'During my internship at Jethi Tech, an international digital marketing firm, I collaborated with startups on digital growth strategies. My responsibilities included using various UI libraries to improve responsive and modern designs.'
   }
 ]
 
