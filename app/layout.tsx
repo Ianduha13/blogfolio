@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <PHProvider>
         <body className={cn(
-          "min-h-screen font-sans antialiased px-4 bg-[#121212]",
+          "min-h-screen flex flex-col font-sans antialiased bg-[#121212]",
           titillium.className
         )}>
           <ThemeProvider

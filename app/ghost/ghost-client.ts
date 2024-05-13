@@ -47,6 +47,19 @@ export async function getFeaturedBlogs() {
       throw new Error(err)
     });
 }
+export async function getBlogsByTag(tag: string) {
+  return await api.posts
+    .browse({
+      filter: `tags:${tag}`,
+      include: ["tags", "authors"],
+      limit: 10
+    })
+    .catch(err => {
+      throw new Error(err)
+    });
+}
+
+
 
 
 export async function getSinglePost(postSlug: string) {

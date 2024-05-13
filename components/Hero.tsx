@@ -6,7 +6,7 @@ import SplineScene from './SplineScene'
 
 export default function Hero() {
   return (
-    <main className='mx-auto flex h-[50vh] max-w-[1100px] justify-between'>
+    <main className='relative mx-auto flex h-[50vh] w-full max-w-[1100px] items-center'>
       <section className='flex h-full w-[55%] flex-col justify-center gap-6'>
         <span className='w-fit rounded-full border border-foreground px-4 py-2'>Development</span>
         <h1 className='text-4xl font-semibold'>Welcome to my personal Code Documentation Library</h1>
