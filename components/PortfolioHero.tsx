@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function PortfolioHero() {
@@ -15,8 +16,16 @@ export default function PortfolioHero() {
       </figure>
       <span className='flex w-3/5 flex-col gap-4'>
         <h2 className='text-4xl font-semibold'>Ian Duhamel Hayes</h2>
-        <p>Code enthusiast with a knack for explaining complex ideas in simple ways. I love sharing my tech journey and learning from others.</p>
-        <button className='w-fit rounded-full border border-primary px-4 py-2 text-primary'>Contact Me</button>
+        <p>  Enthusiastic developer with over 2 years of experience in various tech roles.
+          Passionate about simplifying complex ideas and sharing my tech journey.
+          I enjoy building innovative tools and solutions, and I&apos;m always eager to learn from others.
+        </p>
+        <Link className='w-fit rounded-full border border-primary px-4 py-2 text-primary'
+          href={"https://calendly.com/ian-duhamel/30min"}
+          target='_blank'
+        >
+          Contact Me
+        </Link>
       </span>
     </section>
   )

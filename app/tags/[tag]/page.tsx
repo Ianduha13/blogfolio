@@ -10,8 +10,6 @@ export async function generateStaticParams() {
   }));
 }
 
-
-
 export default async function page({ params }: { params: { tag: string } }) {
   const blogs = await getBlogsByTag(params.tag)
   return (
