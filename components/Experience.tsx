@@ -7,7 +7,7 @@ const experience = [
     title: 'Full Stack Javascript Developer',
     company: 'Hashi',
     date: 'Mar 2023 - Currently',
-    description: 'At Hashi, a startup specializing in B2B online education, I lead key project streamlining efforts. Major achievements include leading the development of a React Native npm library compatible with both Expo and RN bundlers, and working across all company projects as a Full Stack Javascript Developer.'
+    description: "At Hashi, a startup specializing in B2B online education, I contributed developing a React Native npm library compatible with both Expo and RN bundlers, and maintaining our primary project, a Next.js white-label platform web app with Supabase for database management. This platform is designed to be easily replicated for each client, providing a reliable learning solution tailored to meet specific client needs.",
   },
   {
     id: 'devink',
