@@ -10,7 +10,7 @@ export default function Hero() {
     <main className='relative mx-auto flex h-[50vh] w-full max-w-[1100px] items-center'>
       <div className="relative flex h-full w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-lg border bg-background px-4 py-4 md:shadow-xl">
         <Meteors number={40} />
-        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-400/80 bg-clip-text text-center text-2xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10 sm:text-4xl">
+        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-500/80 bg-clip-text text-center text-2xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-300/90 sm:text-4xl">
           Welcome to my personal Code Documentation Library
         </span>
 
