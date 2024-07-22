@@ -15,7 +15,7 @@ export default function PersonalProjectsShowcase() {
       <h3 className='mb-4 text-3xl text-primary'>Personal Projects Showcase</h3>
       <div className="flex flex-col gap-4">
         <Link href={"https://shorkit.com/"} target="_blank">
-          <Card className="flex flex-col sm:flex-row">
+          <Card className="flex flex-col items-center sm:flex-row">
             <CardHeader className="w-full sm:w-2/3">
               <Image
                 src='/shorkit.png'
@@ -47,7 +47,7 @@ export default function PersonalProjectsShowcase() {
           </Card>
         </Link>
         <Link href={"https://www.pomodoro-timer.site/"} target="_blank">
-          <Card className="flex flex-col sm:flex-row">
+          <Card className="flex flex-col items-center sm:flex-row">
             <CardHeader className="w-full  sm:w-2/3">
               <Image
                 src='/Pomodoro-timer.png'

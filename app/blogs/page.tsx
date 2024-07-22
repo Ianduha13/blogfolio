@@ -7,8 +7,8 @@ import { getPosts } from '../ghost/ghost-client'
 export default async function page() {
   const blogs = await getPosts()
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between gap-24 pt-24">
-      <section className="relative mx-auto w-full max-w-[1100px] px-4">
+    <main className="flex min-h-screen flex-col items-center justify-between gap-16  pt-24">
+      <section className="relative mx-auto w-[90%] max-w-[1100px] ">
         <div className='mb-6 flex items-center justify-between border-b  border-foreground pb-4'>
           <h3 className="text-4xl font-semibold text-primary">Blogs</h3>
         </div>

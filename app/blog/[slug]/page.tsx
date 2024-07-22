@@ -42,7 +42,7 @@ export default async function page({ params }: { params: { slug: string } }) {
   const blog = await getSinglePost(params.slug)
 
   return (
-    <main className="pb-16 pt-8 dark:bg-[#121212] lg:pb-24 lg:pt-32">
+    <main className="pb-8 pt-24 dark:bg-[#121212] lg:pb-12 lg:pt-32">
       <div className="mx-auto flex max-w-screen-xl justify-between px-4 ">
         <article className="prose prose-xl prose-blue mx-auto w-full max-w-3xl  dark:prose-invert sm:prose-base prose-p:text-gray-800 prose-a:no-underline dark:prose-p:text-gray-100">
           <div className="mb-4 flex w-full justify-between ">
