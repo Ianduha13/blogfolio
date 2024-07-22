@@ -15,14 +15,14 @@ export default function PersonalProjectsShowcase() {
       <h3 className='mb-4 text-3xl text-primary'>Personal Projects Showcase</h3>
       <div className="flex flex-col gap-4">
         <Link href={"https://shorkit.com/"} target="_blank">
-          <Card className="flex ">
-            <CardHeader className="w-2/3">
+          <Card className="flex flex-col sm:flex-row">
+            <CardHeader className="w-full sm:w-2/3">
               <Image
                 src='/shorkit.png'
                 height={667}
                 width={1186}
                 alt='Shorkit'
-                className="h-[230px]  object-contain"
+                className=" rounded-xl object-cover"
               />
             </CardHeader>
             <CardContent className="flex w-full flex-col justify-between gap-2 py-4">
@@ -37,7 +37,7 @@ export default function PersonalProjectsShowcase() {
                   I am passionate about free utilities for developers and wanted to create a project that would be useful to others.
                 </p>
               </div>
-              <div className="flex gap-2 ">
+              <div className="mt-2 flex flex-wrap gap-2">
                 <Badge>Next.js Full Server-side</Badge>
                 <Badge variant="outline" className="border-primary">Supabase</Badge>
                 <Badge>Cloudflare</Badge>
@@ -47,18 +47,18 @@ export default function PersonalProjectsShowcase() {
           </Card>
         </Link>
         <Link href={"https://www.pomodoro-timer.site/"} target="_blank">
-          <Card className="flex ">
-            <CardHeader className="w-2/3">
+          <Card className="flex flex-col sm:flex-row">
+            <CardHeader className="w-full  sm:w-2/3">
               <Image
                 src='/Pomodoro-timer.png'
                 height={667}
                 width={1186}
                 alt='Shorkit'
-                className="h-[230px]  object-contain"
+                className=" max-h-[240px] rounded-xl object-cover"
               />
             </CardHeader>
-            <CardContent className="flex w-full flex-col justify-between gap-2 py-4">
-              <div>
+            <CardContent className="flex w-full  flex-col justify-between gap-2">
+              <div className="flex flex-col gap-2">
                 <h4 className="text-2xl font-semibold">
                   Pomodoro-Timer App
                 </h4>
@@ -69,7 +69,7 @@ export default function PersonalProjectsShowcase() {
                   The brand is provitional and will be changed in the future.
                 </p>
               </div>
-              <div className="flex gap-2 ">
+              <div className="mt-2 flex flex-wrap gap-2">
                 <Badge>React Native</Badge>
                 <Badge variant="outline" className="border-primary">Supabase</Badge>
                 <Badge>React Query</Badge>

@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Home() {
   const featuredBlogs = await getFeaturedBlogs();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between gap-24 px-2 pt-24">
+    <main className="flex min-h-screen flex-col items-center justify-between gap-24 px-4 pt-32 sm:px-8 sm:pt-24">
       <Hero />
       {featuredBlogs?.length !== undefined &&
         <FeaturedCarousel blogs={featuredBlogs} />

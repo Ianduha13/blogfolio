@@ -38,30 +38,30 @@ export default function Experience() {
   return (
     <section className='w-full max-w-[900px]'>
       <h3 className='mb-4 text-3xl text-primary'>Experience</h3>
-      <div className='flex items-center'>
-        <ul className=''>
-          <li className={`border-l-4 ${selectedExperience === 'hashi' ? "border-primary" : "border-primary/20"} w-[120px] py-3 pl-4 text-xl`}>
+      <div className='flex flex-col items-center md:flex-row'>
+        <ul className='flex md:flex-col'>
+          <li className={`border-b-4 md:border-b-0 md:border-r-4 ${selectedExperience === 'hashi' ? "border-primary" : "border-primary/20"} w-[120px] py-3 pl-4 text-xl`}>
             <button onClick={() => setSelectedExperience('hashi')}>
               Hashi
             </button>
           </li>
-          <li className={`border-l-4 ${selectedExperience === 'devink' ? "border-primary" : "border-primary/20"} w-[120px] py-3 pl-4 text-xl`}>
+          <li className={`border-b-4 md:border-b-0 md:border-r-4 ${selectedExperience === 'devink' ? "border-primary" : "border-primary/20"} w-[120px] py-3 pl-4 text-xl`}>
             <button onClick={() => setSelectedExperience('devink')}>
               Devink
             </button>
           </li>
-          <li className={`border-l-4 ${selectedExperience === 'bookster' ? "border-primary" : "border-primary/20"} w-[120px] py-3 pl-4 text-xl`}>
+          <li className={`border-b-4 md:border-b-0 md:border-r-4 ${selectedExperience === 'bookster' ? "border-primary" : "border-primary/20"} w-[120px] py-3 pl-4 text-xl`}>
             <button onClick={() => setSelectedExperience('bookster')}>
               Bookster
             </button>
           </li>
-          <li className={`border-l-4 ${selectedExperience === 'jethi' ? "border-primary" : "border-primary/20"} w-[120px] py-3 pl-4 text-xl`}>
+          <li className={`border-b-4 md:border-b-0 md:border-r-4 ${selectedExperience === 'jethi' ? "border-primary" : "border-primary/20"} w-[120px] py-3 pl-4 text-xl`}>
             <button onClick={() => setSelectedExperience('jethi')}>
               Jethi Tech
             </button>
           </li>
         </ul>
-        <div className='ml-8'>
+        <div className='w-4/5  sm:ml-8'>
           {activeExperience !== undefined &&
             <>
               < h4 className='text-xl font-semibold'>{activeExperience.title}</h4>

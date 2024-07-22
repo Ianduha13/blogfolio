@@ -22,16 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="" >
       <PHProvider>
         <body className={cn(
-          "min-h-screen flex flex-col font-sans antialiased bg-[#121212]",
+          "min-h-screen flex flex-col font-sans antialiased dark:bg-[#121212]",
           titillium.className
         )}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
-            enableSystem
+            enableSystem={false}
             disableTransitionOnChange
           >
             <Navbar />

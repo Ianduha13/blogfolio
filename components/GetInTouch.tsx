@@ -15,7 +15,7 @@ export default function GetInTouch() {
           className='cursor-pointer rounded-full border border-primary px-4 py-2 text-primary'>
           Schedule a Call
         </Link>
-        <a className='cursor-pointer rounded-full border border-white px-4 py-2 text-white' href={'/Ian Duhamel CV.pdf'} download>Download CV</a>
+        <a className='cursor-pointer rounded-full border border-foreground px-4 py-2 text-foreground' href={'/Ian Duhamel CV.pdf'} download>Download CV</a>
       </div>
     </section>
   )
