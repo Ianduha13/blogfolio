@@ -23,6 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="" >
+      <head>
+        <script defer data-domain="ianduhamel.tech" src="https://plausible.cap.devink.site/js/script.js"></script>
+      </head>
+
       <PHProvider>
         <body className={cn(
           "min-h-screen flex flex-col font-sans antialiased dark:bg-[#121212]",

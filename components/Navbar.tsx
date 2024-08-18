@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import ThemeToggleButton from './ThemeToggleButton'
 import NavigationMenu from './NavigationMenu'
+import MobileNavigationSheet from './MobileNavigationSheet'
 
 export default function Navbar() {
   return (
@@ -10,14 +11,17 @@ export default function Navbar() {
         <Link href='/'>
           <h4 className='text-2xl font-semibold text-primary'>IanDuhamel.tech</h4>
         </Link>
-        <div className='absolute left-1/2 -translate-x-1/2'>
-          <div className='hidden sm:flex'>
+        <div className='absolute left-1/2 hidden -translate-x-1/2 md:flex'>
+          <div className=''>
             <NavigationMenu />
           </div>
         </div>
-        <ul>
-          <li>
+        <ul className='flex items-center gap-2'>
+          <li className='hidden md:flex'>
             <ThemeToggleButton />
+          </li>
+          <li className='md:hidden'>
+            <MobileNavigationSheet/>
           </li>
         </ul>
       </nav >

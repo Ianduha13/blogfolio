@@ -1,5 +1,4 @@
 "use client"
-import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 
 import {
@@ -11,16 +10,17 @@ import {
 } from "@/components/ui/carousel"
 import FeaturedBlogsCard from "./FeaturedBlogsCard"
 import { PostsOrPages } from "@tryghost/content-api"
+import { useRef } from "react"
 
 export function FeaturedCarousel({ blogs }: { blogs: PostsOrPages }) {
-  const plugin = React.useRef(
+  const plugin = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
   )
 
   return (
     <section className="relative mx-auto w-full max-w-[1100px]">
       <h3 className="mb-6 border-b border-foreground pb-4 text-4xl font-semibold text-primary">Featured Blogs</h3>
-      <Carousel
+     <Carousel
         plugins={[plugin.current]}
         className="relative mt-2"
         onMouseEnter={plugin.current.stop}
