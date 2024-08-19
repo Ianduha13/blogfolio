@@ -13,17 +13,17 @@ type ProjectCardProps = {
   badges: string[];
 };
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ href, imageSrc, imageAlt, title, description, badges }) => {
+const ProjectCard = ({ href, imageSrc, imageAlt, title, description, badges }: ProjectCardProps) => {
   return (
     <Link href={href} target="_blank">
-      <Card className="flex flex-col items-center sm:flex-row">
-        <CardHeader className="w-full sm:w-2/3">
+      <Card className="flex min-h-72 flex-col items-center md:flex-row">
+        <CardHeader className="w-full">
           <Image
             src={imageSrc}
             height={667}
             width={1186}
             alt={imageAlt}
-            className="h-52 rounded-xl object-contain"
+            className="aspect-video rounded-xl object-cover object-center"
           />
         </CardHeader>
         <CardContent className="flex w-full flex-col justify-between gap-2 py-4">
@@ -37,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ href, imageSrc, imageAlt, tit
           </div>
           <div className="mt-2 flex flex-wrap gap-2">
             {badges.map((badge, index) => (
-              <Badge key={index}>{badge}</Badge>
+              <Badge key={index} className={`${index % 2 === 0 ? "border border-primary bg-white text-black dark:bg-black dark:text-white": "bg-primary"}`}>{badge}</Badge>
             ))}
           </div>
         </CardContent>

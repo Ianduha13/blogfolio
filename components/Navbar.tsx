@@ -6,7 +6,7 @@ import MobileNavigationSheet from './MobileNavigationSheet'
 
 export default function Navbar() {
   return (
-    <div className='fixed top-0 z-10 w-full bg-background shadow-md shadow-foreground/10 dark:bg-[#121212] dark:shadow-black/30'>
+    <div className='fixed top-0 z-[9999] w-full bg-background shadow-md shadow-foreground/10 dark:bg-[#121212] dark:shadow-black/30'>
       <nav className='mx-auto flex w-[90%] max-w-[1100px] items-center justify-between  py-6 '>
         <Link href='/'>
           <h4 className='text-2xl font-semibold text-primary'>IanDuhamel.tech</h4>
