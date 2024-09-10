@@ -12,7 +12,7 @@ import { Suspense } from "react";
 const titillium = Titillium_Web({ weight: ['200', '300', '400', '600', '700'], subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "IanDuhamel.com",
+  title: "Ian Duhamel Blog",
   description: "Code enthusiast with a knack for explaining complex ideas in simple ways. I love sharing my tech journey and learning from others.",
 };
 
