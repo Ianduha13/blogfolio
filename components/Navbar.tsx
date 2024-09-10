@@ -9,7 +9,7 @@ export default function Navbar() {
     <div className='fixed top-0 z-[49] w-full bg-background shadow-md shadow-foreground/10 dark:bg-[#121212] dark:shadow-black/30'>
       <nav className='mx-auto flex w-[90%] max-w-[1100px] items-center justify-between  py-6 '>
         <Link href='/'>
-          <h4 className='text-2xl font-semibold text-primary'>IanDuhamel.tech</h4>
+          <h4 className='text-2xl font-semibold text-primary'>IanDuhamel.com</h4>
         </Link>
         <div className='absolute left-1/2 hidden -translate-x-1/2 md:flex'>
           <div className=''>

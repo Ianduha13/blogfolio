@@ -12,7 +12,7 @@ import { Suspense } from "react";
 const titillium = Titillium_Web({ weight: ['200', '300', '400', '600', '700'], subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "IanDuhamel.tech",
+  title: "IanDuhamel.com",
   description: "Code enthusiast with a knack for explaining complex ideas in simple ways. I love sharing my tech journey and learning from others.",
 };
 
@@ -23,10 +23,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="" >
-      <head>
-        <script defer data-domain="ianduhamel.tech" src="https://plausible.cap.devink.site/js/script.js"></script>
-      </head>
-
       <PHProvider>
         <body className={cn(
           "min-h-screen flex flex-col font-sans antialiased dark:bg-[#121212]",
