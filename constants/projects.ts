@@ -9,6 +9,7 @@ export const projects = [
                   Shorkit features OAuth integration for easy sign-in and a user-friendly dashboard for managing links.`,
     badges: ['Next.js Full SSR', 'Supabase', 'Redis Rate Limiting', 'Tailwind CSS']
   },
+
   {
     href: "https://imaginify.site/",
     imageSrc: '/imaginify.png',
@@ -20,13 +21,13 @@ export const projects = [
     badges: ['Next.js 14', 'MongoDB', 'Clerk', 'Stripe', 'Cloudinary AI']
   },
   {
-    href: "https://www.pomodoro-timer.site/",
-    imageSrc: '/Pomodoro-timer.png',
-    imageAlt: 'Pomodoro-Timer App',
-    title: 'Pomodoro-Timer App',
-    description: `Pomodoro Timer is a productivity app designed to help you focus on tasks by breaking them into intervals.
-                  Built with React-Native and Expo-Router for the frontend, and Supabase for the backend.
-                  The app is currently in the Alpha stage on the Play Store and is waiting the release being tested by a group of users.`,
-    badges: ['React Native', 'Supabase', 'React Query', 'Expo Router', 'EAS']
-  }
+    href: "https://npmchecker.com/",
+    imageSrc: '/npm-checker.png',
+    imageAlt: 'npm checker',
+    title: 'npm checker',
+    description: `A simple web tool that helps you check for outdated dependencies in your package.json.
+                It works by using npm-check-updates in a server action. 
+                The project is open-source and available for community contributions.`,
+    badges: ['Next.js', 'npm-check-updates', 'Open Source']
+  },
 ]; 

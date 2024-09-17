@@ -19,7 +19,7 @@ const Projects = () => {
           />
         ))}
       </div>
-      <div className="w-full md:hidden">
+      <div className="mb-12 w-full md:hidden">
         <PersonalProjectsMobileCarousel projects={projects} />
       </div>
     </section>
