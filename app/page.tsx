@@ -17,7 +17,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between gap-24 px-4 pt-32 sm:px-8 sm:pt-28">
       <Hero />
-      {featuredBlogs?.length !== undefined &&
+      {featuredBlogs?.length !== undefined && featuredBlogs.length > 0 &&
         <FeaturedCarousel blogs={featuredBlogs} />
       }
       <BlogsList />
